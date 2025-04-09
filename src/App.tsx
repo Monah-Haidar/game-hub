@@ -7,12 +7,14 @@ import {Genre} from "./hooks/useGenres.ts";
 import PlatformSelector from "./components/molecules/PlatformSelector.tsx";
 import {Platform} from "./hooks/useGames.ts";
 import SortSelector from "./components/molecules/SortSelector.tsx";
+import './App.css';
 
 
 export interface GameQuery {
     genre: Genre | null;
     platform: Platform | null;
     sortOrder: string;
+    searchText: string;
 }
 
 
@@ -32,7 +34,7 @@ function App() {
                 }}
             >
                 <GridItem area="nav">
-                    <NavBar/>
+                    <NavBar onSearch={(searchText) => setGameQuery({...gameQuery, searchText})}/>
                 </GridItem>
 
                 <Show above="lg">
