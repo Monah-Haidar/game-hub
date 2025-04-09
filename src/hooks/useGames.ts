@@ -1,5 +1,4 @@
 import useData from "./useData.ts";
-import {Genre} from "./useGenres.ts";
 import {GameQuery} from "../App.tsx";
 
 export interface Platform {
@@ -23,6 +22,7 @@ const useGames =
             params: {
                 genres: gameQuery.genre?.id,
                 parent_platforms: gameQuery.platform?.id,
+                ordering: gameQuery.sortOrder,
             }
         },
         [gameQuery]
