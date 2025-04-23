@@ -5,7 +5,7 @@ import GenreList from "./components/organism/GenreList.tsx";
 import {useState} from "react";
 import {Genre} from "./hooks/useGenres.ts";
 import PlatformSelector from "./components/molecules/PlatformSelector.tsx";
-import {Platform} from "./hooks/useGames.ts";
+import {Platform} from "./hooks/usePlatforms.ts";
 import SortSelector from "./components/molecules/SortSelector.tsx";
 import './App.css';
 import GameHeading from "./components/atoms/GameHeading.tsx";
