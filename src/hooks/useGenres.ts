@@ -13,7 +13,7 @@ export interface Genre {
 
 const useGenres = () => {
 
-    return useQuery<Genre[], Error>({
+    return useQuery({
         queryKey: ['genres'],
         queryFn: () => 
             apiClient
