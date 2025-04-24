@@ -1,14 +1,12 @@
-import {Box, Grid, GridItem, HStack, Show} from '@chakra-ui/react'
-import NavBar from "./components/organism/NavBar.tsx";
-import GameGrid from "./components/organism/GameGrid.tsx";
-import GenreList from "./components/organism/GenreList.tsx";
-import {useState} from "react";
-import {Genre} from "./hooks/useGenres.ts";
-import PlatformSelector from "./components/molecules/PlatformSelector.tsx";
-import {Platform} from "./hooks/usePlatforms.ts";
-import SortSelector from "./components/molecules/SortSelector.tsx";
+import { Box, Grid, GridItem, HStack, Show } from '@chakra-ui/react';
+import { useState } from "react";
 import './App.css';
 import GameHeading from "./components/atoms/GameHeading.tsx";
+import PlatformSelector from "./components/molecules/PlatformSelector.tsx";
+import SortSelector from "./components/molecules/SortSelector.tsx";
+import GameGrid from "./components/organism/GameGrid.tsx";
+import GenreList from "./components/organism/GenreList.tsx";
+import NavBar from "./components/organism/NavBar.tsx";
 
 
 export interface GameQuery {
